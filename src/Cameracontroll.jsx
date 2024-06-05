@@ -10,8 +10,8 @@ const CameraController = () => {
 
     useEffect(() => {
         const handleScroll = (event) => {
-            horizontalAngleRef.current += event.deltaX * 0.001
-            verticalAngleRef.current += event.deltaY * 0.001
+            horizontalAngleRef.current += event.deltaX * 0.01
+            verticalAngleRef.current += event.deltaY * 0.01
         }
 
         const handleTouchStart = (event) => {
