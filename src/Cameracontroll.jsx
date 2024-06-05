@@ -23,8 +23,8 @@ const CameraController = () => {
             const touch = event.touches[0]
             const deltaX = touch.clientX - lastTouch.x
             const deltaY = touch.clientY - lastTouch.y
-            horizontalAngleRef.current += deltaX * 0.001
-            verticalAngleRef.current += deltaY * 0.001
+            horizontalAngleRef.current += deltaX * 0.01
+            verticalAngleRef.current += deltaY * 0.01
             setLastTouch({ x: touch.clientX, y: touch.clientY })
         }
 
