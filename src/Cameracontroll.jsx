@@ -60,9 +60,9 @@ const Scanvas = () => {
             <Canvas style={{ width: '100%', height: '100%' }}
                 camera={{ position: [2, 2, 2], fov: 75 }}
                 shadows>
-                <color attach="background" args={['#64748b']} />
+                {/* <color attach="background" args={['#64748b']} /> */}
                 <RandomizedLight position={[2, 5, 5]} />
-                <Environment preset="sunset" background={false} />
+                <Environment preset="sunset" background={true} />
                 <OrbitControls enableZoom={false} enablePan={false} />
 
                 <mesh position={[0, 0.5, 0]} castShadow>
