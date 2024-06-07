@@ -66,7 +66,7 @@ const Scanvas = () => {
                 <OrbitControls enableZoom={false} enablePan={false} />
 
                 <mesh position={[0, 0.5, 0]} castShadow>
-                    <boxGeometry args={[1, 1, 1]} />
+                    <sphereGeometry args={[1, 32, 32]} />
                     <meshStandardMaterial metalness={1} roughness={0} color="orange" />
                 </mesh>
 
